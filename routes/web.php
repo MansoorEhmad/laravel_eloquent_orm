@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailsController;
 use App\Http\Controllers\studentController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -35,3 +37,9 @@ Route::delete('/students/{student}', [studentController::class, 'destroy'])->nam
 Route::get('/products', [ProductController::class, 'index'])->name('get.products');
 Route::get('/product-details', [ProductDetailsController::class, 'index'])->name('get.product.details');
 Route::get('/product/add', [ProductController::class, 'store'])->name('add.product');
+
+
+// one to many relationship testing
+Route::get('/teams', [TeamController::class, 'index'])->name('get.teams');
+Route::get('/books', [BookController::class, 'index'])->name('get.books');
+Route::get('/team/add', [TeamController::class, 'store'])->name('add.team');

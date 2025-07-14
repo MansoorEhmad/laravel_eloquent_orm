@@ -12,7 +12,7 @@ class ProductDetails extends Model
     public $timestamps = false;
     protected $guarded = [];
 
-    // inverse relation
+    // reverse relation
     // if u want to get data of product details with parent table products then
     // product dteails -> products
     public function product(){

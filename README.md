@@ -89,6 +89,8 @@ This will create records in products & product details tables (and others if nee
 ```bash
 php artisan db:seed --class=ProductSeeder
 php artisan db:seed --class=ProductDetailsSeeder
+php artisan db:seed --class=TeamSeeder
+php artisan db:seed --class=BookSeeder
 ```
 ##
 
