@@ -84,6 +84,14 @@ php artisan migrate
 ```
 ##
 
+### 8.1. Run Seeders
+This will create records in products & product details tables (and others if needed):
+```bash
+php artisan db:seed --class=ProductSeeder
+php artisan db:seed --class=ProductDetailsSeeder
+```
+##
+
 ### 9. Serve the Application
 To run the Laravel development server, use:
 ```bash

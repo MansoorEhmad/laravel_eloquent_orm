@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductDetailsController;
 use App\Http\Controllers\studentController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,3 +30,8 @@ Route::put('/students/{student}', [studentController::class, 'update'])->name('s
 
 // Delete a student
 Route::delete('/students/{student}', [studentController::class, 'destroy'])->name('students.destroy');
+
+// one to one relationship testing
+Route::get('/products', [ProductController::class, 'index'])->name('get.products');
+Route::get('/product-details', [ProductDetailsController::class, 'index'])->name('get.product.details');
+Route::get('/product/add', [ProductController::class, 'store'])->name('add.product');
