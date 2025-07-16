@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Member;
 use App\Models\User;
+use App\Models\UserRole;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -25,6 +27,9 @@ class DatabaseSeeder extends Seeder
             ProductDetailsSeeder::class,
             TeamSeeder::class,
             BookSeeder::class,
+            MemberSeeder::class,
+            RoleSeeder::class,
+            UserRolesSeeder::class
         ]);
     }
 }

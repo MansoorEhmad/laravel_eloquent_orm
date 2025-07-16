@@ -91,6 +91,9 @@ php artisan db:seed --class=ProductSeeder
 php artisan db:seed --class=ProductDetailsSeeder
 php artisan db:seed --class=TeamSeeder
 php artisan db:seed --class=BookSeeder
+php artisan db:seed --class=MemberSeeder
+php artisan db:seed --class=RoleSeeder
+php artisan db:seed --class=UserRolesSeeder
 ```
 ##
 
