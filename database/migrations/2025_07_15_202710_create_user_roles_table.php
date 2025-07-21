@@ -19,6 +19,12 @@ return new class extends Migration
             $table->unsignedBigInteger('role_id');
             $table->foreign('role_id')->references('id')->on('roles')->onUpdate('cascade')
                 ->onDelete('cascade');
+
+            // if u want to prevent duplicate row/pairs then add below code uncomment.
+            // eg:ROW:1, member id 1, role id 1 [its valid]
+            // ROW:2, member id 1, role id 1 [its not valid]
+            // if u add unique constraint then no one can add same row again
+            // $table->unique(['member_id', 'role_id']);
         });
     }
 

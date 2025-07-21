@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailsController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\studentController;
 use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
@@ -43,3 +45,10 @@ Route::get('/product/add', [ProductController::class, 'store'])->name('add.produ
 Route::get('/teams', [TeamController::class, 'index'])->name('get.teams');
 Route::get('/books', [BookController::class, 'index'])->name('get.books');
 Route::get('/team/add', [TeamController::class, 'store'])->name('add.team');
+
+
+// many to many relationship testing
+Route::get('/members', [MemberController::class, 'index'])->name('get.members');
+Route::get('/roles', [RoleController::class, 'index'])->name('get.roles');
+Route::get('/member/add', [MemberController::class, 'store'])->name('add.member');
+Route::get('/role/add', [RoleController::class, 'store'])->name('add.role');
