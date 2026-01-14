@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\CompanyDetails;
 use App\Models\Member;
 use App\Models\User;
 use App\Models\UserRole;
@@ -29,7 +30,24 @@ class DatabaseSeeder extends Seeder
             BookSeeder::class,
             MemberSeeder::class,
             RoleSeeder::class,
-            UserRolesSeeder::class
+            UserRolesSeeder::class,
+            EmployeeSeeder::class,
+            CompanySeeder::class,
+            CompanyDetailsSeeder::class,
+            CustomerSeeder::class,
+            OrderSeeder::class,
+            CountrySeeder::class,
+            CreateSeeder::class,
+            PostSeeder::class,
+            SubscribeSeeder::class,
+            ParagraphSeeder::class,
+            FileSeeder::class,
+            VideoSeeder::class,
+            TagSeeder::class,
+            ClientSeeder::class,
+            RecordSeeder::class,
+            PeopleSeeder::class,
+            ArticleSeeder::class
         ]);
     }
 }

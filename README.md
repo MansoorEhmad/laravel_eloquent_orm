@@ -94,6 +94,23 @@ php artisan db:seed --class=BookSeeder
 php artisan db:seed --class=MemberSeeder
 php artisan db:seed --class=RoleSeeder
 php artisan db:seed --class=UserRolesSeeder
+php artisan db:seed --class=EmployeeSeeder
+php artisan db:seed --class=CompanySeeder
+php artisan db:seed --class=CompanyDetailsSeeder
+php artisan db:seed --class=CustomerSeeder
+php artisan db:seed --class=OrderSeeder
+php artisan db:seed --class=CountrySeeder
+php artisan db:seed --class=CreateSeeder
+php artisan db:seed --class=PostSeeder
+php artisan db:seed --class=SubscribeSeeder
+php artisan db:seed --class=ParagraphSeeder
+php artisan db:seed --class=FileSeeder
+php artisan db:seed --class=VideoSeeder
+php artisan db:seed --class=TagSeeder
+php artisan db:seed --class=ClientSeeder
+php artisan db:seed --class=RecordSeeder
+php artisan db:seed --class=PeopleSeeder
+php artisan db:seed --class=ArticleSeeder
 ```
 ##
 
